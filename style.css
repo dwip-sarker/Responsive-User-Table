@@ -1,0 +1,157 @@
+/* 
+-------------------------------------
+Title : Responsive User Table
+Author: Dip Sarker
+Github : github.com/freelancderdipsarker
+------------------------------------- 
+*/
+
+/* ***** GOOGLE FONTS *****  */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap");
+
+/* 
+-------------------------------------
+CSS RESET
+------------------------------------- 
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 60.25%;
+}
+body {
+  font-size: 1.6em;
+  background-color: #f9f9f9;
+  /* background-color: green; */
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+  padding: 0;
+}
+.left {
+  text-align: left;
+}
+.center {
+  text-align: center;
+}
+.right {
+  text-align: right;
+}
+.fa-circle-small {
+  color: green;
+}
+/* 
+-------------------------------------
+GLOBAL CLASSES
+------------------------------------- 
+*/
+h2 {
+  font-size: 1em;
+}
+.image-area {
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+.image-area img {
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 15px;
+  margin-left: 10px;
+}
+.button {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 5px 15px;
+  border: 0;
+  border-radius: 5px;
+}
+.online {
+  height: 10px;
+  width: 10px;
+  border-radius: 10px;
+  background-color: #28a745;
+  display: inline-block;
+  margin-right: 8px;
+}
+.offline {
+  height: 10px;
+  width: 10px;
+  border-radius: 10px;
+  background-color: #dc3545;
+  display: inline-block;
+  margin-right: 8px;
+}
+.fa-ellipsis-vertical {
+  color: #007bff;
+}
+/* 
+-------------------------------------
+TABLE AREA 
+------------------------------------- 
+*/
+.heading {
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 2.5em;
+}
+.table-area {
+  overflow-x: auto;
+}
+table {
+  width: 1000px;
+  text-align: center;
+  border-collapse: separate;
+  border-spacing: 0 12px;
+}
+table thead tr {
+  height: 40px;
+}
+table tbody tr {
+  box-shadow: rgba(50, 50, 93, 0.164) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.123) 0px 1px 3px -1px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+table tbody tr td {
+  background-color: white;
+}
+table tbody tr td:first-child {
+  border-top-left-radius: 6px;
+}
+table tbody tr td:first-child {
+  border-bottom-left-radius: 6px;
+}
+table tbody tr td:last-child {
+  border-top-right-radius: 6px;
+}
+table tbody tr td:last-child {
+  border-bottom-right-radius: 6px;
+}
+
+/* 
+-------------------------------------
+MEDIA QUERY
+------------------------------------- 
+*/
+
+@media only screen and (max-width: 1000px) {
+  .table-area {
+    padding: 10px;
+  }
+}
